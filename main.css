@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.topnav {
+    background-color: #3b5998;
+    height: 44px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+.topnav a{
+    text-decoration: none;
+}
+.topnav img {
+    height: 32px;
+}
+.input_form {
+    height: 151px;
+    width: 416px;
+    margin-left: 50%;
+    transform: translateX(-50%);  
+    margin-top: 16px;
+    
+
+}
+.first_two_input{
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    width: 100%;
+}
+hr {
+    border: 0.5px solid #dfdfdf;
+}
+.input_form input {
+    width: 100%;
+    height: 41.6px;
+    background-color: #f5f6f7;
+    box-sizing: border-box;
+    padding: 12px;
+    color: -internal-light-dark-color(black, white);
+    font-weight: 400px;
+    border: none;    
+}
+.input_form input:nth-child(1){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.input_form input:nth-child(2){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.input_form button {
+    width: 100%;
+    height: 36px;
+    background-color: #1877f2;
+    margin-top: 12px;
+    border: none;
+    display: flex;
+    color: white;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.or {
+    width: 416px;
+    text-align: center;    
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    align-items: center;
+}
+.or::before {
+    content: " ";
+    height: 0.5px;
+    flex: 1;
+    background-color: rgb(202, 202, 202);;
+}
+.or span {
+    color: #4b4f56;
+    padding: 0px 17px;
+    font-size: 14px;
+}
+.or::after {
+    content: " ";
+    height: 0.5px;
+    flex: 1;
+    background-color: rgb(202, 202, 202);
+}
+.createAccount {
+    width: 167px;
+    height: 36px;
+    background-color: #00a400;
+    border-radius: 5px;
+    color: white;
+    float: left;
+    margin: 12px 50%;
+    transform: translateX(-50%);
+}
+.createAccount a{
+    text-decoration: none;
+}
+.createAccount div {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.forgotPas {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.forgotPas a{
+    text-decoration: none;
+    color: #7596C8;
+    font-size: 14px;
+}
+.inc {
+    text-align: center;
+    font-size: 12px;
+    color: #808080;
+    margin-top: 400px;
+    margin-bottom: 8px;
+}
+@media (max-width: 448px) {
+.input_form{
+    width: 92.85%;
+}
+.or {
+    width: 92.85%;
+}
+}
